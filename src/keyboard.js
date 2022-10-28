@@ -22,6 +22,7 @@ function runInteractiveConsole() {
   keypress(process.stdin);
   process.stdin.on('keypress', (ch, key) => {
     if (key) {
+      
       // Вызывает команду, соответствующую нажатой кнопке.
       if (key.name in keyboard) {
         keyboard[key.name]();
