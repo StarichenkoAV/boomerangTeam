@@ -12,6 +12,7 @@ const View = require('./View');
 
 class Game {
   constructor({ trackLength }) {
+    
     this.trackLength = trackLength;
     this.hero = new Hero(); // Герою можно аргументом передать бумеранг.
     this.enemy = new Enemy();
