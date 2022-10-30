@@ -4,16 +4,21 @@ class Hero {
   constructor(obj) {
     this.skin = '🤠'; // можете использовать любые emoji '💃'
     this.position = obj.position;
+
   }
 
   moveLeft() {
     // Идём влево.
-    this.position -= 1;
+    if (this.position > 0) {
+      this.position -= 1;
+    }
   }
 
   moveRight() {
-    // Идём вправо.
-    this.position += 1;
+    // Идём вправо. ПОДКЛЮЧИТЬ ДЛИНУ ТРЕКА!!!!
+    if (this.position <= 30) {
+      this.position += 1;
+    }
   }
 
   attack() {
